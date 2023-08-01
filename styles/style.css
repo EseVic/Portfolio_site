@@ -1,0 +1,124 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* scrollbar modifications */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #021227;
+  border-radius: 10px;
+  color: #021227;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3cba54;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3cba5399;
+}
+
+/* project section feature */
+
+.featured-project-img-01 {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(25, 254, 67, 0),
+    rgba(25, 254, 67, 0)
+  );
+
+  transition: background-image 0.5s;
+  position: relative;
+  color: #ffffff78;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  height: 12%;
+  width: 100%;
+  background-color: #021227;
+  z-index: 1000;
+  padding-top: 25px;
+}
+.featured-project-img-01::before {
+  content: "";
+  width: 100%;
+  display: block;
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(2, 22, 49, 0.5),
+    rgba(2, 22, 48, 0.5)
+  );
+
+  transition: width 1s ease-in-out;
+}
+.featured-project-img-01:hover:before {
+  width: 0%;
+}
+
+/* hiding img scrollbars */
+
+.featured-project-img-01-div::-webkit-scrollbar {
+  display: none;
+}
+.featured-project-img-01-div {
+  -ms-overflow-style: none; /* E.g Internet Explorer, Edge... */
+  scrollbar-width: none; /* E.g Firefox */
+}
+
+
+/* project mentions */
+
+.mentions-project:hover .mentions-project-img {
+  display: none;
+}
+.mentions-project:hover .mentions-project-div {
+  display: block;
+}
+.mentions-project {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(25, 254, 67, 0),
+    rgba(25, 254, 67, 0)
+  );
+
+  transition: background-image 0.5s;
+  position: relative;
+}
+
+.mentions-project::after {
+  content: "";
+
+  display: block;
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(2, 22, 49, 0.5),
+    rgba(2, 22, 48, 0.5)
+  );
+
+  transition: width 1s ease-in-out;
+}
+.mentions-project:hover:after {
+  width: 0%;
+}
