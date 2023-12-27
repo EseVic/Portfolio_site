@@ -49,6 +49,7 @@ html {
   z-index: 1000;
   padding-top: 25px;
 }
+
 .featured-project-img-01::before {
   content: "";
   width: 100%;
