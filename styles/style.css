@@ -123,3 +123,84 @@ html {
 .mentions-project:hover:after {
   width: 0%;
 }
+
+/* Typing animation for the first p and h2 tags */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #309543; 
+  width: 0;
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.typing-delay {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #247032;
+  width: 0;
+  animation: typing 4s steps(40, end) 4s forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Repeating the typing after the second finishes */
+.typing {
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+
+/* Writing animation for the first p and h2 tags */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.writing {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #309543; 
+  width: 0;
+  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.writing-delay {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #247032;
+  width: 0;
+  animation: typing 10s steps(40, end) 4s forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Repeating the typing after the second finishes */
+.writing {
+  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
