@@ -146,7 +146,7 @@ html {
   overflow: hidden;
   border-right: 3px solid #309543; 
   width: 0;
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 4s steps(20, end), blink-caret 0.75s step-end infinite;
 }
 
 .typing-delay {
@@ -154,12 +154,12 @@ html {
   overflow: hidden;
   border-right: 3px solid #247032;
   width: 0;
-  animation: typing 4s steps(40, end) 4s forwards, blink-caret 0.75s step-end infinite;
+  animation: typing 4s steps(20, end) 4s forwards, blink-caret 0.75s step-end infinite;
 }
 
 /* Repeating the typing after the second finishes */
 .typing {
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 4s steps(20, end), blink-caret 0.75s step-end infinite;
   animation-delay: 0s;
   animation-iteration-count: infinite;
 }
@@ -187,7 +187,7 @@ html {
   overflow: hidden;
   border-right: 3px solid #309543; 
   width: 0;
-  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 6s steps(50, end), blink-caret 0.75s step-end infinite;
 }
 
 .writing-delay {
@@ -195,12 +195,12 @@ html {
   overflow: hidden;
   border-right: 3px solid #247032;
   width: 0;
-  animation: typing 10s steps(40, end) 4s forwards, blink-caret 0.75s step-end infinite;
+  animation: typing 10s steps(50, end) 4s forwards, blink-caret 0.75s step-end infinite;
 }
 
 /* Repeating the typing after the second finishes */
 .writing {
-  animation: typing 6s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 6s steps(50, end), blink-caret 0.75s step-end infinite;
   animation-delay: 1s;
   animation-iteration-count: infinite;
 }
